@@ -38,11 +38,7 @@ def plot_waveform_and_mel_spectrogram(audio, sr, title=""):
     plt.subplot(2, 1, 2)
     S = librosa.feature.melspectrogram(y=audio, sr=sr, n_mels=128, fmax=8000)
     S_dB = librosa.power_to_db(S, ref=np.max)
-    librosa.display.specshow(S_dB, sr=sr, x_axis='time', y_axis='mel', fmax=8000)
-    plt.colorbar(format='%+2.0f dB')
-    plt.title(f"Mel Spectrogram: {title}")
-    plt.xlabel("Time (s)")
-    plt.ylabel("Frequency (Hz)")
+    librosa.display.specshow(S_dB, sr=sr, fmax=8000)
     
     plt.tight_layout()
 
