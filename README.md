@@ -23,7 +23,7 @@ Soundfile is a simple and efficient library for reading and writing sound files.
 
 Soundfile operates efficiently with NumPy arrays, making it a natural fit for projects that need to handle large amounts of audio data.
 
-## 3. **audiomentations**
+## 3. **Audiomentations**
 
 Audiomentations is a specialized library for audio data augmentation. It provides several augmentation techniques that are directly applicable to machine learning models. The main reason audiomentations is used in this project is its **compatibility with machine learning (ML)** tasks. It integrates smoothly into ML pipelines, making it an ideal choice for augmenting audio data in preparation for model training.
 
